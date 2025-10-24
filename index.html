@@ -9,319 +9,160 @@
 <body>
     <!-- Главная страница -->
     <div id="main-page">
-        <header>
-            <h1>Самые известные картины</h1>
-            <nav>
-                <ul>
-                    <li><a href="#main-page">Главная</a></li>
-                    <li><a href="#detailed-page">Подробное описание</a></li>
-                    <li><a href="#table-page">Таблица данных</a></li>
-                </ul>
-            </nav>
+        <!-- Шапка с логотипом и навигацией -->
+        <header class="main-header">
+            <div class="header-top">
+                <div class="logo-slogan">
+                    <div class="logo">🎨 ArtGallery</div>
+                    <div class="slogan">Шедевры мировой живописи</div>
+                </div>
+                <nav class="main-nav">
+                    <a href="#main-page">Главная</a>
+                    <a href="#detailed-page">Подробное описание</a>
+                    <a href="#table-page">Таблица данных</a>
+                </nav>
+            </div>
         </header>
 
-        <main>
-            <section class="gallery-section">
-                <h2>Галерея известных картин</h2>
-                <div class="gallery-container">
+        <main class="main-content">
+            <!-- Левый блок с галереей и статьями -->
+            <div class="left-column">
+                <!-- Галерея из 4 картин -->
+                <section class="gallery-section">
                     <div class="gallery-grid">
                         <div class="gallery-item">
-                            <a href="#mona-lisa-page">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Мона Лиза">
-                                <p>Мона Лиза</p>
-                            </a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/250px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Мона Лиза">
                         </div>
                         <div class="gallery-item">
-                            <a href="#starry-night-page">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Звездная ночь">
-                                <p>Звездная ночь</p>
-                            </a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/250px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Звездная ночь">
                         </div>
                         <div class="gallery-item">
-                            <a>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/200px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg" alt="Тайная вечеря">
-                                <p>Тайная вечеря</p>
-                            </a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/250px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg" alt="Тайная вечеря">
                         </div>
                         <div class="gallery-item">
-                            <a>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Scream.jpg/200px-The_Scream.jpg" alt="Крик">
-                                <p>Крик</p>
-                            </a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Scream.jpg/250px-The_Scream.jpg" alt="Крик">
                         </div>
+                    </div>
+                </section>
+
+                <!-- Две большие статьи -->
+                <section class="articles-section">
+                    <article class="main-article">
+                        <h2>Мона Лиза - загадка веков</h2>
+                        <div class="article-content">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/300px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Мона Лиза">
+                            <div class="article-text">
+                                <p>Картина маслом на тополевой доске, самое известное произведение живописи в мире. Форма портрета напоминает пирамиду.</p>
+                                <p>Создание картины началось в 1503 году и шло медленными темпами. Леонардо работал над ней до конца жизни.</p>
+                                <button class="read-more-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="main-article">
+                        <h2>Звездная ночь Ван Гога</h2>
+                        <div class="article-content">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/300px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Звездная ночь">
+                            <div class="article-text">
+                                <p>Картина маслом на холсте является одной из самых узнаваемых работ постимпрессионизма. Размер картины вместе с рамой составляет 74 × 92 см.</p>
+                                <p>Создание картины произошло в 1889 году во время пребывания Ван Гога в лечебнице Сен-Реми.</p>
+                                <button class="read-more-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <!-- Правый блок с боковыми карточками -->
+            <aside class="right-column">
+                <div class="side-cards">
+                    <div class="side-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/200px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg" alt="Тайная вечеря">
+                        <h3>Тайная вечеря</h3>
+                        <p>Фреска Леонардо да Винчи в Милане</p>
+                        <button class="read-more-btn">Подробнее</button>
+                    </div>
+
+                    <div class="side-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Scream.jpg/200px-The_Scream.jpg" alt="Крик">
+                        <h3>Крик</h3>
+                        <p>Знаменитая картина Эдварда Мунка</p>
+                        <button class="read-more-btn">Подробнее</button>
+                    </div>
+
+                    <div class="side-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pablo_Picasso%2C_1901-02%2C_Femme_au_caf%C3%A9%2C_oil_on_canvas%2C_72.6_x_55.3_cm%2C_Hermitage_Museum.jpg/200px-Pablo_Picasso%2C_1901-02%2C_Femme_au_caf%C3%A9%2C_oil_on_canvas%2C_72.6_x_55.3_cm%2C_Hermitage_Museum.jpg" alt="Авиньонские девицы">
+                        <h3>Авиньонские девицы</h3>
+                        <p>Революционная работа Пикассо</p>
+                        <button class="read-more-btn">Подробнее</button>
                     </div>
                 </div>
-            </section>
-
-            <section class="articles-section">
-                <h2>Самые известные картины</h2>
-                
-                <article class="article-card">
-                    <h3>Мона Лиза в Париже, Франция</h3>
-                    <div class="article-content">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/300px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Мона Лиза">
-                        <div class="article-text">
-                            <p>Картина маслом на тополевой доске, самое известное произведение живописи в мире. Форма портрета напоминает пирамиду.</p>
-                            <p>Создание картины началось в 1503 году и шло медленными темпами. Леонардо работал над ней до конца жизни. На создание ушло около 20 слоев лака и тончайшие мазки кисти.</p>
-                            <a href="#mona-lisa-page" class="read-more-btn">Подробнее</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <h3>Звездная ночь, Нидерланды</h3>
-                    <div class="article-content">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/300px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Звездная ночь">
-                        <div class="article-text">
-                            <p>Картина маслом на холсте является одной из самых узнаваемых работ постимпрессионизма. Размер картины вместе с рамой составляет 74 × 92 см.</p>
-                            <p>Создание картины произошло в 1889 году во время пребывания Ван Гога в лечебнице Сен-Реми. Художник работал с невероятной скоростью, создавая по картине в день.</p>
-                            <button class="read-more-btn">Подробнее</button>
-                        </div>
-                    </div>
-                </article>
-            </section>
+            </aside>
         </main>
 
-        <footer>
+        <footer class="main-footer">
             <p>2024 | Группа: Б9123-09.03.04 | Разработчик: Бижанова А.Е.</p>
         </footer>
     </div>
 
-    <!-- Страница с подробным описанием Мона Лизы -->
-    <div id="mona-lisa-page" style="display:none">
-        <header>
-            <h1>Мона Лиза - подробное описание</h1>
-            <nav>
-                <ul>
-                    <li><a href="#main-page">Главная</a></li>
-                    <li><a href="#detailed-page">Подробное описание</a></li>
-                    <li><a href="#table-page">Таблица данных</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h2>Мона Лиза (Джоконда)</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/600px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Мона Лиза" width="500" align="center">
-                
-                <h3>История создания</h3>
-                <p>«Мона Лиза» была написана Леонардо да Винчи между 1503 и 1506 годами во Флоренции. Картина представляет собой портрет Лизы Герардини, супруги флорентийского торговца шелком Франческо дель Джокондо.</p>
-                
-                <h3>Художественные особенности</h3>
-                <ul>
-                    <li>Техника сфумато — мягкая дымчатая светотень</li>
-                    <li>Композиция в виде пирамиды</li>
-                    <li>Загадочная улыбка и прямой взгляд</li>
-                    <li>Пейзаж на фоне с эффектом атмосферной перспективы</li>
-                    <li>Отсутствие четких контуров</li>
-                    <li>Естественность позы и жестов</li>
-                </ul>
-                
-                <h3>Технические детали</h3>
-                <table border="1" width="100%">
-                    <tr>
-                        <td width="30%"><b>Художник</b></td>
-                        <td>Леонардо да Винчи</td>
-                    </tr>
-                    <tr>
-                        <td><b>Годы создания</b></td>
-                        <td>1503-1506</td>
-                    </tr>
-                    <tr>
-                        <td><b>Размеры</b></td>
-                        <td>77 × 53 см</td>
-                    </tr>
-                    <tr>
-                        <td><b>Техника</b></td>
-                        <td>Масло на тополевой доске</td>
-                    </tr>
-                    <tr>
-                        <td><b>Стиль</b></td>
-                        <td>Высокое Возрождение</td>
-                    </tr>
-                    <tr>
-                        <td><b>Место хранения</b></td>
-                        <td>Лувр, Париж, Франция</td>
-                    </tr>
-                </table>
-                
-                <h3>История владения</h3>
-                <p>Картина находилась в коллекции французского короля Франциска I, затем в Версале, а после Французской революции была перемещена в Лувр. В 1911 году была похищена итальянским патриотом Винченцо Перуджей, который хотел вернуть её на родину Леонардо. Картина была возвращена через 2 года.</p>
-                
-                <h3>Культурное влияние</h3>
-                <p>«Мона Лиза» стала иконой поп-культуры, объектом многочисленных пародий и интерпретаций. Её загадочная улыбка породила множество теорий и исследований. Картина считается эталоном портретной живописи и одним из величайших произведений искусства в истории.</p>
-                
-                <details>
-                    <summary>Интересные факты</summary>
-                    <ul>
-                        <li>В 1956 году картина была повреждена кислотой</li>
-                        <li>Защищена пуленепробиваемым стеклом</li>
-                        <li>Ежегодно её видят около 8 миллионов посетителей</li>
-                        <li>Никогда не покидает стен Лувра</li>
-                    </ul>
-                </details>
-                
-                <a href="#main-page" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #007cba; color: white; text-decoration: none; border-radius: 5px;">Вернуться на главную</a>
-            </section>
-        </main>
-
-        <footer>
-            <p>2024 | Группа: Б9123-09.03.04 | Разработчик: Бижанова А.Е.</p>
-        </footer>
-    </div>
-
-    <!-- Страница с подробным описанием Звездной ночи -->
-    <div id="starry-night-page" style="display:none">
-        <header>
-            <h1>Звездная ночь - подробное описание</h1>
-            <nav>
-                <ul>
-                    <li><a href="#main-page">Главная</a></li>
-                    <li><a href="#detailed-page">Подробное описание</a></li>
-                    <li><a href="#table-page">Таблица данных</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h2>Звездная ночь</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Звездная ночь" width="500" align="center">
-                
-                <h3>История создания</h3>
-                <p>«Звездная ночь» была написана Винсентом Ван Гогом в 1889 году, во время его пребывания в лечебнице Сен-Поль-де-Мозоль в Сен-Реми-де-Прованс.</p>
-                
-                <h3>Художественные особенности</h3>
-                <ul>
-                    <li>Экспрессивные мазки и вихреобразные формы</li>
-                    <li>Интенсивные контрастные цвета</li>
-                    <li>Динамичная композиция</li>
-                    <li>Эмоциональная насыщенность</li>
-                    <li>Уникальное изображение ночного неба</li>
-                </ul>
-                
-                <h3>Технические детали</h3>
-                <table border="1" width="100%">
-                    <tr>
-                        <td width="30%"><b>Художник</b></td>
-                        <td>Винсент Ван Гог</td>
-                    </tr>
-                    <tr>
-                        <td><b>Год создания</b></td>
-                        <td>1889</td>
-                    </tr>
-                    <tr>
-                        <td><b>Размеры</b></td>
-                        <td>73.7 × 92.1 см</td>
-                    </tr>
-                    <tr>
-                        <td><b>Техника</b></td>
-                        <td>Масло на холсте</td>
-                    </tr>
-                    <tr>
-                        <td><b>Стиль</b></td>
-                        <td>Постимпрессионизм</td>
-                    </tr>
-                    <tr>
-                        <td><b>Место хранения</b></td>
-                        <td>Музей современного искусства, Нью-Йорк</td>
-                    </tr>
-                </table>
-                
-                <h3>Символика</h3>
-                <p>Картина отражает эмоциональное состояние художника. Вихри в небе интерпретируются как символы душевных переживаний, а кипарисы - как связующее звено между землей и небом.</p>
-                
-                <h3>Интересные факты</h3>
-                <ul>
-                    <li>Ван Гог написал картину из окна своей комнаты в лечебнице</li>
-                    <li>Художник считал эту работу неудачной</li>
-                    <li>Картина стала одной из самых узнаваемых в мире</li>
-                    <li>Входит в постоянную экспозицию Музея современного искусства в Нью-Йорке</li>
-                </ul>
-                
-                <a href="#main-page" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #007cba; color: white; text-decoration: none; border-radius: 5px;">Вернуться на главную</a>
-            </section>
-        </main>
-
-        <footer>
-            <p>2024 | Группа: Б9123-09.03.04 | Разработчик: Бижанова А.Е.</p>
-        </footer>
-    </div>
-
-    <!-- Остальные существующие страницы -->
+    <!-- Остальные страницы -->
     <div id="detailed-page" style="display:none">
-        <header>
-            <h1>Подробное описание картин</h1>
-            <nav>
-                <ul>
-                    <li><a href="#main-page">Главная</a></li>
-                    <li><a href="#detailed-page">Подробное описание</a></li>
-                    <li><a href="#table-page">Таблица данных</a></li>
-                </ul>
-            </nav>
+        <header class="main-header">
+            <div class="header-top">
+                <div class="logo-slogan">
+                    <div class="logo">🎨 ArtGallery</div>
+                    <div class="slogan">Шедевры мировой живописи</div>
+                </div>
+                <nav class="main-nav">
+                    <a href="#main-page">Главная</a>
+                    <a href="#detailed-page">Подробное описание</a>
+                    <a href="#table-page">Таблица данных</a>
+                </nav>
+            </div>
         </header>
-
-        <main>
-            <section>
-                <h2>Раздел с подробными описаниями</h2>
-                <p>Эта страница будет содержать подробные описания различных картин.</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>2024 | Группа: Б9123-09.03.04 | Разработчик: Бижанова А.Е.</p>
-        </footer>
+        <!-- Контент страницы с подробным описанием -->
     </div>
 
     <div id="table-page" style="display:none">
-        <header>
-            <h1>Таблица известных картин</h1>
-            <nav>
-                <ul>
-                    <li><a href="#main-page">Главная</a></li>
-                    <li><a href="#detailed-page">Подробное описание</a></li>
-                    <li><a href="#table-page">Таблица данных</a></li>
-                </ul>
-            </nav>
+        <header class="main-header">
+            <div class="header-top">
+                <div class="logo-slogan">
+                    <div class="logo">🎨 ArtGallery</div>
+                    <div class="slogan">Шедевры мировой живописи</div>
+                </div>
+                <nav class="main-nav">
+                    <a href="#main-page">Главная</a>
+                    <a href="#detailed-page">Подробное описание</a>
+                    <a href="#table-page">Таблица данных</a>
+                </nav>
+            </div>
         </header>
-
-        <main>
-            <section>
-                <h2>Таблица данных о картинах</h2>
-                <p>Эта страница будет содержать таблицу с данными о различных картинах.</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>2024 | Группа: Б9123-09.03.04 | Разработчик: Бижанова А.Е.</p>
-        </footer>
+        <!-- Контент страницы с таблицей -->
     </div>
 
     <script>
         // Навигация между страницами
-        document.querySelectorAll('nav a, a[href^="#"]').forEach(link => {
+        document.querySelectorAll('.main-nav a').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = this.getAttribute('href').substring(1);
                 
-                // Скрыть все страницы
                 document.querySelectorAll('div[id$="-page"]').forEach(page => {
                     page.style.display = 'none';
                 });
                 
-                // Показать целевую страницу
                 document.getElementById(target).style.display = 'block';
             });
         });
 
-        // Кнопка "Подробнее" для Звездной ночи (без перехода)
-        document.querySelector('#main-page button.read-more-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Функция "Подробнее" для этой картины будет реализована позже');
+        // Кнопки "Подробнее" без перехода
+        document.querySelectorAll('.read-more-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Функция "Подробнее" будет реализована позже');
+            });
         });
         
-        // Показать главную страницу по умолчанию
         document.getElementById('main-page').style.display = 'block';
     </script>
 </body>
