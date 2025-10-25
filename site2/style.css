@@ -1,11 +1,4 @@
-/* Простой тестовый CSS */
-/* Тестовые стили - если они работают, значит CSS подключен */
-.test-red {
-    color: red !important;
-    background: yellow !important;
-    border: 3px solid red !important;
-}
-
+/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -14,34 +7,340 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: #f0f0f0;
+    background: #f8f9fa;
+    line-height: 1.6;
+    color: #333;
 }
 
 #main-page {
-    background: white;
     max-width: 1400px;
     margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Яркие тестовые стили */
+/* Шапка */
 .main-header {
-    background: red !important;
-    padding: 20px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
     color: white;
+    padding: 1.5rem 2rem;
+    border-bottom: 3px solid #e74c3c;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.logo-slogan {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.slogan {
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.main-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #e74c3c;
+    transform: translateY(-2px);
+}
+
+/* Основной контент */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Левая колонка */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Галерея из 4 картин */
+.gallery-section {
+    margin-bottom: 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
 .gallery-item {
-    border: 5px solid blue !important;
-    padding: 10px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    aspect-ratio: 4/3;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Основные статьи */
+.articles-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
 .main-article {
-    background: green !important;
-    color: white;
-    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+}
+
+.main-article h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.article-content img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.article-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Правая колонка */
+.right-column {
+    position: sticky;
+    top: 2rem;
+}
+
+.side-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .side-card {
-    border: 5px solid orange !important;
-    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.side-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    border-color: #3498db;
+}
+
+.side-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.side-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.side-card p {
+    color: #666;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Кнопки */
+.read-more-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.read-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    background: linear-gradient(135deg, #c0392b, #a93226);
+}
+
+/* Подвал */
+.main-footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+.main-footer p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .right-column {
+        position: static;
+    }
+    
+    .article-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .article-content img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .main-nav {
+        gap: 1rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .main-article {
+        padding: 1.5rem;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+    }
+    
+    .slogan {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .main-nav a {
+        text-align: center;
+    }
+    
+    .gallery-item {
+        aspect-ratio: 3/2;
+    }
+    
+    .main-article h2 {
+        font-size: 1.5rem;
+    }
+    
+    .side-card {
+        padding: 1rem;
+    }
+}
+
+/* Стили для других страниц */
+#detailed-page,
+#table-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+    display: none;
 }
