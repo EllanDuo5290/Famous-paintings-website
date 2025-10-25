@@ -1,4 +1,11 @@
 /* Простой тестовый CSS */
+/* Тестовые стили - если они работают, значит CSS подключен */
+.test-red {
+    color: red !important;
+    background: yellow !important;
+    border: 3px solid red !important;
+}
+
 * {
     margin: 0;
     padding: 0;
