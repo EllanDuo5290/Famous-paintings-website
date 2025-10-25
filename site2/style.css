@@ -1,0 +1,40 @@
+/* Простой тестовый CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+}
+
+#main-page {
+    background: white;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Яркие тестовые стили */
+.main-header {
+    background: red !important;
+    padding: 20px;
+    color: white;
+}
+
+.gallery-item {
+    border: 5px solid blue !important;
+    padding: 10px;
+}
+
+.main-article {
+    background: green !important;
+    color: white;
+    padding: 20px;
+}
+
+.side-card {
+    border: 5px solid orange !important;
+    padding: 15px;
+}
